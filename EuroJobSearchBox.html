@@ -7,9 +7,9 @@
   <style>
     :root {
       --top-card-width: 240px;
-      --top-card-height: 118px;
-      --old-card-width: calc(var(--top-card-width) * 0.60);
-      --old-card-height: calc(var(--top-card-height) * 0.60);
+      --top-card-height: 120px;
+      --old-card-width: 144px;
+      --old-card-height: 72px;
       --gap: 34px;
       --border: #cfcfcf;
       --text: #000;
@@ -80,7 +80,6 @@
       text-align: center;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
       transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
-      cursor: pointer;
     }
 
     .card:hover,
@@ -105,7 +104,7 @@
     .card.old-card {
       width: var(--old-card-width);
       height: var(--old-card-height);
-      font-size: 21px;
+      font-size: 22px;
       border-radius: 7px;
     }
 
@@ -124,7 +123,7 @@
     .eu {
       position: relative;
       overflow: hidden;
-      background: #0046ad;
+      background: #4f8fd3;
     }
 
     .eu svg {
@@ -170,30 +169,30 @@
     <section class="panel" aria-labelledby="current-title">
       <h1 id="current-title">Euro Job Search Bots</h1>
       <div class="top-grid">
-        <a class="card top-card orange" href="https://chatgpt.com/g/g-6a333eb5a5d48191ba3538162deb094e-euro-jobs-v-3-0" target="_blank" rel="noopener noreferrer" onclick="return openBot(event, this.href)">Version 3.0</a>
-        <a class="card top-card yellow" href="https://chatgpt.com/g/g-6a3942e3dd788191b63bcdc6f7e86142-jobteaser" target="_blank" rel="noopener noreferrer" onclick="return openBot(event, this.href)">Job Teaser Only</a>
+        <a class="card top-card orange" href="https://chatgpt.com/g/g-6a333eb5a5d48191ba3538162deb094e-euro-jobs-v-3-0" target="_blank" rel="noopener noreferrer">Version 3.0</a>
+        <a class="card top-card yellow" href="https://chatgpt.com/g/g-6a3942e3dd788191b63bcdc6f7e86142-jobteaser" target="_blank" rel="noopener noreferrer">Job Teaser Only</a>
       </div>
     </section>
 
     <section class="panel" aria-labelledby="previous-title">
       <h2 id="previous-title">Previous Versions</h2>
       <div class="previous-grid">
-        <a class="card old-card red" href="https://chatgpt.com/g/g-6a32f81617c0819185023f5950a80a8c-euro-jobs-2-0" target="_blank" rel="noopener noreferrer" onclick="return openBot(event, this.href)">Version 2.0</a>
-        <a class="card old-card eu" href="https://chatgpt.com/g/g-6a31f7ab203c8191a8144bb0846b8a3d-euro-jobs" target="_blank" rel="noopener noreferrer" onclick="return openBot(event, this.href)" aria-label="First Bot">
+        <a class="card old-card red" href="https://chatgpt.com/g/g-6a32f81617c0819185023f5950a80a8c-euro-jobs-2-0" target="_blank" rel="noopener noreferrer">Version 2.0</a>
+        <a class="card old-card eu" href="https://chatgpt.com/g/g-6a31f7ab203c8191a8144bb0846b8a3d-euro-jobs" target="_blank" rel="noopener noreferrer" aria-label="First Bot">
           <svg viewBox="0 0 144 72" aria-hidden="true">
             <g transform="translate(72 36)">
-              <path class="star" transform="translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(30) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(60) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(90) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(120) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(150) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(180) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(210) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(240) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(270) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(300) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
-              <path class="star" transform="rotate(330) translate(0 -24) scale(0.55)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(0.0 -27.0) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(30.0 -23.4) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(52.0 -13.5) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(60.0 -0.0) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(52.0 13.5) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(30.0 23.4) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(0.0 27.0) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(-30.0 23.4) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(-52.0 13.5) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(-60.0 0.0) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(-52.0 -13.5) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
+              <path class="star" transform="translate(-30.0 -23.4) scale(0.38)" d="M0,-10 L2.94,-3.09 L9.51,-3.09 L4.76,1.18 L6.18,8.09 L0,4.2 L-6.18,8.09 L-4.76,1.18 L-9.51,-3.09 L-2.94,-3.09 Z"/>
             </g>
           </svg>
           <span>First Bot</span>
@@ -201,21 +200,5 @@
       </div>
     </section>
   </main>
-
-  <script>
-    function openBot(event, url) {
-      event.preventDefault();
-
-      if (/Android/i.test(navigator.userAgent)) {
-        const target = url.replace(/^https?:\/\//, '');
-        const fallback = encodeURIComponent(url);
-        window.location.href = `intent://${target}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${fallback};end`;
-        return false;
-      }
-
-      window.open(url, '_blank', 'noopener,noreferrer');
-      return false;
-    }
-  </script>
 </body>
 </html>
