@@ -6,10 +6,10 @@
   <title>Euro Job Search Box</title>
   <style>
     :root {
-      --top-card-width: 240px;
-      --top-card-height: 120px;
-      --old-card-width: 144px;
-      --old-card-height: 72px;
+      --top-card-width: 80px;
+      --top-card-height: 38px;
+      --old-card-width: 101px;
+      --old-card-height: 50px;
       --gap: 34px;
       --border: #cfcfcf;
       --text: #000;
@@ -23,7 +23,7 @@
       margin: 0;
       padding: 32px;
       min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, sans-serif;
       color: var(--text);
       background: #ffffff;
     }
@@ -48,7 +48,9 @@
     h1,
     h2 {
       margin: 0 0 34px;
-      font-size: clamp(34px, 4vw, 50px);
+      font-size: 15.6px;
+      text-decoration: underline;
+      font-family: Arial, sans-serif;
       line-height: 1.1;
       font-weight: 800;
       letter-spacing: -0.02em;
@@ -78,6 +80,8 @@
       text-decoration: none;
       font-weight: 800;
       text-align: center;
+      line-height: 1.12;
+      font-family: Arial, sans-serif;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
       transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
     }
@@ -98,13 +102,13 @@
     .card.top-card {
       width: var(--top-card-width);
       height: var(--top-card-height);
-      font-size: 27px;
+      font-size: 13px;
     }
 
     .card.old-card {
       width: var(--old-card-width);
       height: var(--old-card-height);
-      font-size: 22px;
+      font-size: 16px;
       border-radius: 7px;
     }
 
@@ -170,7 +174,7 @@
       <h1 id="current-title">Euro Job Search Bots</h1>
       <div class="top-grid">
         <a class="card top-card orange" href="https://chatgpt.com/g/g-6a333eb5a5d48191ba3538162deb094e-euro-jobs-v-3-0" target="_blank" rel="noopener noreferrer">Version 3.0</a>
-        <a class="card top-card yellow" href="https://chatgpt.com/g/g-6a3942e3dd788191b63bcdc6f7e86142-jobteaser" target="_blank" rel="noopener noreferrer">Job Teaser Only</a>
+        <a class="card top-card yellow" href="https://chatgpt.com/g/g-6a3942e3dd788191b63bcdc6f7e86142-jobteaser" target="_blank" rel="noopener noreferrer">Job Teaser<br>Only</a>
       </div>
     </section>
 
